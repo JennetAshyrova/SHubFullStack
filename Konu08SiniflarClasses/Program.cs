@@ -119,6 +119,32 @@
             Console.WriteLine($"Anasayfa Hakkımızda{ kategori.KategoriAdi} {kategori2.KategoriAdi}           {kategori3.KategoriAdi}İletişim");
 
             #endregion
+
+
+            #region   Örnek 5
+            SiniftaMetotKullanimi metotKullanimi = new();  //SiniftaMetotKullanimi classından metotkullanımı adında bir nesne oluşturduk
+            var sonuc = metotKullanimi.LoginKontrol("admin","123");//metotKullanimi nesnesinin içinde LoginKontrol metoduna istediği parametreleri vererek oradan dönecek bool değeri sonuc değişkenine atadık
+            if (sonuc == true)  //eğer sonuc değeşkenine gelen değer true ise
+            {
+                Console.WriteLine("Giriş Başarılı");
+                Console.WriteLine("Hoşgedin Admin");
+            }
+            else  //sonuc değeri false ise
+            {
+                Console.WriteLine("giriş başarısız");
+            }
+            
+
+            Console.WriteLine();
+            var toplamsonucu = metotKullanimi.ToplamaYap(10, 8);
+            Console.WriteLine("toplama sonucu:" + toplamsonucu);
+
+            Console.WriteLine();
+            Console.WriteLine("statik değişken :"+ SiniftaMetotKullanimi.StatikDegisken); //statikdegisken in değerine ulaşmak için direk sınıfadi.StatikDegisken adı şeklinde ulaşıyoruz
+            Console.WriteLine("dinamik değişken:"+metotKullanimi.DinamikDegisken);
+
+
+            #endregion
         }
 
     }
@@ -143,3 +169,4 @@
         internal int ModelYili;
     }
 }
+
