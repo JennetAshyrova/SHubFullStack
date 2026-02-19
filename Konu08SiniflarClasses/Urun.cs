@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Konu08SiniflarClasses
+{
+    internal class Urun
+    {
+        // class içinde değişken-field kullanımı
+        internal int Id;
+        internal string Adi;
+        internal decimal Fiyati;
+        //class içinde property kullanımı
+        public string UrunAciklmasi { get; set; }
+        public string Markasi { get; set; }
+        public bool Durum { get; set; }  //ürünün hanği kategoriye ait olduğu bilgisini tutar
+        public Kategori? Kategori { get; set; }  //navigation   property ürün ve kategori arası ilişki kurar.
+    }
+}

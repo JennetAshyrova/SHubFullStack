@@ -145,6 +145,26 @@
 
 
             #endregion
+
+            #region Örnek6
+            User user = new()
+            {
+                Id = 1,
+                CreateDate = DateTime.Now,
+                Name= "Test",
+                Email= "Test@deneme.co",
+                Password =sifre,
+                Phone = "Test",
+                Username = kullaniciAdi
+            };
+            Console.WriteLine();
+            var kullaniciGirisSonuc = user.KullaniciGiris(user.Username, user.Password);
+            Console.WriteLine("kullanıcı giriş sonucu: " + kullaniciGirisSonuc);
+
+            #endregion
+
+
+
         }
 
     }
