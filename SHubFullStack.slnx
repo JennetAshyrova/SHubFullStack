@@ -10,4 +10,5 @@
   <Project Path="Konu09StructYapilar/Konu09StructYapilar.csproj" Id="c89d76a3-a086-4190-a21e-a91b75c4bf45" />
   <Project Path="Konu10StringSinifi/Konu10StringSinifi.csproj" Id="98163807-5c0b-4a15-86f6-b5d79a0fdeed" />
   <Project Path="Konu11Enumlar/Konu11Enumlar.csproj" Id="6507d4ab-e133-4c65-8f02-340d0507d6cc" />
+  <Project Path="Konu12Kalitimİnheritance/Konu12Kalitimİnheritance.csproj" Id="69a1b2e8-c13d-4218-8518-a4fadd0d0571" />
 </Solution>
