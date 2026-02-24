@@ -76,8 +76,47 @@ namespace Konu12Kalitimİnheritance
 
             Console.WriteLine();
 
+            Cizici[] birCizici = new Cizici[4];
+            birCizici[0] = new DogruCiz();
+            birCizici[1] = new DaireCiz();
+            birCizici[2] = new KareCiz();
+            birCizici[3] = new Cizici();
+            
+            foreach( var item in birCizici)
+            {
+                item.Ciz();
+            }
+
             
         }
     }
     //polimorfizm-çok biçimlilik
+    public class Cizici
+    {
+        public virtual void Ciz() // virtual keywordu ile bu metodu override-ezilebilir hale getiriyoruz 
+        {
+            Console.WriteLine("Cizici");
+        }
+    }
+    public class DogruCiz : Cizici
+    {
+        public override void Ciz()
+        {
+            Console.WriteLine("düz çizgi");
+        }
+    }
+    public class DaireCiz : Cizici
+    {
+        public override void Ciz()
+        {
+            Console.WriteLine("daire çizgi");
+        }
+    }
+    public class KareCiz : Cizici
+    {
+        public override void Ciz()
+        {
+            Console.WriteLine("kare çizgi");
+        }
+    }
 }
