@@ -51,6 +51,27 @@
             arayuz.Topla();
             arayuz.Goster();
             Console.WriteLine("toplama sonucu : "+ arayuz.ToplamaYap());
+            Console.WriteLine();
+
+            Kategori kategori = new Kategori()
+            {
+                Id = 1,
+                Name = "elektronik " , IsActive= true
+            };
+            Console.WriteLine("kategori");
+            Console.WriteLine(kategori.Name);
+            Console.WriteLine();
+            Urun urun = new Urun()
+            {
+                Id = 1,
+                Name = "Afyon çift sim cep telefonu ",
+                IsActive = true,
+                Price = 18000,
+            };
+            Console.WriteLine("Ürün Bilgileri:");
+            Console.WriteLine(urun.Name);
+            Console.WriteLine(urun.Price+ "tl");
+
         }
     }
 }
