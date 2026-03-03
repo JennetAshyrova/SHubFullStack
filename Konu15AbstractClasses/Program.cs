@@ -5,11 +5,25 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Konu15AbstractClasses");
+            //Database database = new Database();  //  abstract class ı şu şekilde new lenmez
+            Database sql = new SqlServer();  // database sınıfından bir örneek oluşturmak için alt sınıflar new lenir.
+            sql.Add();
+            sql.Get();
+            sql.Update();
+            sql.Delete();
+
+            Database mysql = new MySql();
+            mysql.Add();
+            mysql.Get();
+            mysql.Update();
+            mysql.Delete();
+
         }
+
     }
     abstract class Database // class ın önüne abstract yazarak yapıyı oluşturuyoruz 
     {
-        void Add()
+         internal void Add()
         {
             Console.WriteLine("ekleme metodu çalıştı.");
         }
@@ -21,13 +35,14 @@
     {
         internal override void Delete()
         {
-            Console.WriteLine(" SqlServer Delete metodu çalıştı.");
+            Console.WriteLine("SqlServer Delete metodu çalıştı.");
         }
 
         internal override void Get()
         {
             Console.WriteLine("SqlServer Get metodu çalıştı.");
         }
+        
 
         internal override void Update()
         {
@@ -48,7 +63,24 @@
 
         internal override void Update()
         {
-            Console.WriteLine("Oracle Update metodu çalıştı.");   // 40 dk
+            Console.WriteLine("Oracle Update metodu çalıştı.");   
+        }
+    }
+    class MySql : Database
+    {
+        internal override void Delete()
+        {
+            Console.WriteLine("MySql Delete metodu çalıştı.");
+        }
+
+        internal override void Get()
+        {
+            Console.WriteLine("MySql Get metodu çalıştı.");
+        }
+
+        internal override void Update()
+        {
+            Console.WriteLine("MySql Update metodu çalıştı.");   // 40 dk
         }
     }
 }

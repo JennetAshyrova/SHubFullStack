@@ -14,4 +14,5 @@
   <Project Path="Konu13KapsullemeEncapsulation/Konu13KapsullemeEncapsulation.csproj" Id="2005bbce-a417-410d-b056-4c7c426e0cf0" />
   <Project Path="Konu14InterfacesArayuzler/Konu14InterfacesArayuzler.csproj" Id="3314164a-bfdc-48f9-a8ac-d45444f24572" />
   <Project Path="Konu15AbstractClasses/Konu15AbstractClasses.csproj" Id="d1100a01-2a66-425b-a6c2-3294608d9e6f" />
+  <Project Path="Konu16CollectionsKoleksiyonlar/Konu16CollectionsKoleksiyonlar.csproj" Id="2cd74e3d-67f1-4347-bb96-aa1d84ba2536" />
 </Solution>
