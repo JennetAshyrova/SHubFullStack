@@ -38,5 +38,13 @@ namespace WindowsFormsEgitimi
                 button1.Enabled = false;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if()
+                {
+
+            }
+        }
     }
 }
